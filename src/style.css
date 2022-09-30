@@ -1,0 +1,79 @@
+/*
+ * Basic styling for this page with a "card" option.
+ *
+ * @author Robert C. Duvall
+ */
+@charset "utf-8";
+
+
+body {
+    background-color: lemonchiffon;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: grey;
+}
+
+a {
+    color: darkorange;
+}
+
+label {
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+/* Vue styling */
+#app {
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+/* icon styling */
+li svg {
+}
+
+/* card based styles */
+.title {
+    color: darkviolet;
+    background-color: lightsteelblue;
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin: 0 10px;
+    float: left;
+}
+
+.title .count {
+    color: purple;
+    float: right;
+}
+
+.link {
+    font-weight: normal;
+    text-align: left;
+    background-color: lightgray;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #fafafa;
+    margin: 5px;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #888;
+}
+
+.add-item svg {
+    fill: darkcyan;
+    width: 30px;
+    height: 30px;
+    padding: 5px 0 0 0;
+    margin: 5px 60px 0 0;
+}
