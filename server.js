@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 // make a generic server
 const app = express();
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
-
+app.use(serveStatic("./dist/index.html"));
 // log all requests made to the server
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
 // allow connections from anywhere
@@ -39,12 +39,10 @@ const { OAUTH } = require('./secrets.js');
 
 // set up URL responses:
 // provide some response to visiting the server directly (i.e., its homepage)
-/*
 app.get('/',
     (req, res) => {
         res.send(`<a href="api/getLinks">Get the Data!</a>`);
     });
-*/
 // return the JSON data that used to be fetched directly from the frontend
 app.get('/api/getLinks',
     async (req, res) => {
