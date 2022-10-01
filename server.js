@@ -8,6 +8,7 @@ const express = require('express');
 const morgan = require('morgan');
 const morganBody = require('morgan-body');
 const cors = require('cors');
+const serveStatic = require('serve-static')
 
 const DataStore = require('./DataStore.js');
 const PORT = process.env.PORT || 3000;
